@@ -1,5 +1,6 @@
 import pygame
 
+
 class Menu():
     def __init__(self, game):
         self.game = game
@@ -31,7 +32,7 @@ class MainMenu(Menu):
         self.run_display = True
         while self.run_display:
             self.sound.play(-1)
-            self.sound.set_volume(0.1)
+            self.sound.set_volume(0.04)
             self.game.check_events()
             self.check_input()
             self.game.display.fill(self.game.BLACK)
