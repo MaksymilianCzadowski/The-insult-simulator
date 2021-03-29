@@ -25,10 +25,13 @@ class MainMenu(Menu):
         self.creditsx, self.creditsy = self.mid_w, self.mid_h + 70
         self.leavex, self.leavey = self.mid_w, self.mid_h + 90
         self.cursor_rect.midtop = (self.startx + self.offset, self.starty)
+        self.sound = pygame.mixer.Sound('mainmenu.mp3')
 
     def display_menu(self):
         self.run_display = True
         while self.run_display:
+            self.sound.play(-1)
+            self.sound.set_volume(0.1)
             self.game.check_events()
             self.check_input()
             self.game.display.fill(self.game.BLACK)
