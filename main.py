@@ -4,6 +4,7 @@ from Board import board
 player1 = player('jeune')
 player2 = player('ancien')
 
-board = board
+mots = board
+board.openBoard(mots)
 
-print(board)
+
