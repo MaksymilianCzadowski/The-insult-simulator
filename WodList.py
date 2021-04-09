@@ -1,4 +1,4 @@
-class listworld:
+class listword:
     sujet = ["Tu", "Ton chapeau", "Ton costume", "Tes cheveux", "Ton crâne", "Ton nez", "Ton fessier",
              "Ton postérieur", "Ta maman", "Ton père", "Ta fammile", "Ta soeur", "Ton frère", "Ta grand-mère",
              "Tes enfants", "Ton fils", "Ta fille", "ta tante", "Tes yeux", "Tes jambes", "Tes mains",

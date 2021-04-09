@@ -12,3 +12,6 @@ class player:
 
         self.phrase = []
         self.vie = 100
+
+        def chooseWord(self):
+            

@@ -1,4 +1,4 @@
-from WorlList import listworld
+from WodList import listword
 from random import randint
 
 
@@ -6,10 +6,10 @@ class board:
     board = []
 
     for i in range(3):
-        board.append(listworld.sujet[randint(0, len(listworld.sujet))])
-        board.append(listworld.verbe[randint(0, len(listworld.verbe))])
-        board.append(listworld.complement[randint(0, len(listworld.complement))])
-        board.append(listworld.conjonction[randint(0, len(listworld.conjonction))])
+        board.append(listword.sujet[randint(0, len(listword.sujet))])
+        board.append(listword.verbe[randint(0, len(listword.verbe))])
+        board.append(listword.complement[randint(0, len(listword.complement))])
+        board.append(listword.conjonction[randint(0, len(listword.conjonction))])
 
     def openBoard(self):
         for world in self.board:
