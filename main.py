@@ -5,6 +5,9 @@ player1 = player('jeune')
 player2 = player('ancien')
 
 mots = board
-board.openBoard(mots)
+player1.chooseWord()
+print('---------------------')
+print(player1.phrase)
+
 
 
