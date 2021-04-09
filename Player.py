@@ -29,7 +29,7 @@ class player:
         choice = int(input())
 
         while choice > len(board.boardList):
-            print('valeur incorrect')
+            print('valeur incorrect, veulliez saisir une valeur entre 1 et 12')
             choice = int(input())
 
         for i in board.boardList:
