@@ -2,7 +2,7 @@ class listword:
     sujet = ["Tu", "Ton chapeau", "Ton costume", "Tes cheveux", "Ton crâne", "Ton nez", "Ton fessier",
              "Ton postérieur", "Ta maman", "Ton père", "Ta fammile", "Ta soeur", "Ton frère", "Ta grand-mère",
              "Tes enfants", "Ton fils", "Ta fille", "ta tante", "Tes yeux", "Tes jambes", "Tes mains",
-             "Ta progéniture", "Tes ancêtres", "Tes morts", "Ton pantalon", "Tes chaussures", "Ton ithyphalle"]
+             "Ta progéniture", "Tes ancêtres", "Tes morts", "Ton pantalon", "Tes chaussures", "Ton ithyphalle", "Ta femme", "Ton marie"]
 
     verbe = ["est/sont", "a/ont", "ressemble(nt)", "parle(nt)", "andocite(nt)", "substante(nt)", "mange(nt)",
              "pue(nt)", "dégouline(nt)", "frappe(nt)", "refoule(nt)", "boit/(vent)"]

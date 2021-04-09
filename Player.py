@@ -18,8 +18,10 @@ class player:
         self.vie = 100
 
     def openBoard(self):
-        for world in board.boardList:
-            print(world)
+        count = 1
+        for word in board.boardList:
+            print('[', count, ']', word)
+            count += 1
 
 
     def chooseWord(self):
