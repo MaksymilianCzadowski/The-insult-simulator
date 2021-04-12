@@ -23,7 +23,6 @@ def game():
 
             print("player1 :", player1.vie, "PV")
             print("player2 :", player2.vie, "PV")
-
-        board.newBoard()
+            board.newBoard()
 
 game()
