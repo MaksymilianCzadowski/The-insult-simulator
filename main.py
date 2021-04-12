@@ -13,5 +13,14 @@ def game():
     print("La phrase de player1 est : \"", player1.phrase, "\"")
     print("La phrase de player2 est : \"", player2.phrase, "\"")
 
+    print("------------------")
+    print(len(player1.phrase))
+    print(len(player2.phrase))
+    print("-------------------")
+    player1.vie -= player2.attackPhase()
+    player2.vie -= player1.attackPhase()
+
+    print("player1 :", player1.vie, "PV")
+    print("player2 :", player2.vie, "PV")
 
 game()

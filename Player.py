@@ -45,22 +45,22 @@ class player:
 
 
     def attackPhase(self):
-        player_health = 0
+        player_damage = 0
         weakness = False
         if (len(self.phrase) > 50) and (len(self.phrase) < 60):
-            player_health = player_health - self.damage + 10
+            player_damage = self.damage + 10
             if weakness:
-                player_health *= 1.5
+                player_damage *= 1.5
         elif len(self.phrase) < 50:
-            player_health = player_health - self.damage
+            player_damage = self.damage
             if weakness:
-                player_health *= 1.5
-        elif len(self.phrase) < 60:
-            player_health = player_health - self.damage + 20
+                player_damage *= 1.5
+        elif len(self.phrase) > 60:
+            player_damage = self.damage + 20
             if weakness:
-                player_health *= 1.5
+                player_damage *= 1.5
 
-        return int(player_health)
+        return player_damage
 
 
 
