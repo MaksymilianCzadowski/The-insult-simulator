@@ -24,14 +24,19 @@ def game():
     sleep(2)
     print()
 
+
     choice = int(input("Joueur 1 choississez votre personnage : "))
+    while choice < 1 or choice > 4:
+        choice = int(input("Joueur 1 choississez votre personnage : "))
     player1 = player(choice)
-    choice = input("Joueur 2 choississez votre personnage : ")
+    choice = int(input("Joueur 2 choississez votre personnage : "))
+    while choice < 1 or choice > 4:
+        choice = int(input("Joueur 2 choississez votre personnage : "))
     player2 = player(choice)
     print("Le jeux se lance!")
     sleep(2)
 
-    while not (player1.vie < 0 or player2.vie < 0):
+    while not (player1.vie <= 0 or player2.vie <= 0):
         while len(board.boardList) > 2:
             player1.chooseWord(board)
             player2.chooseWord(board)
@@ -51,5 +56,11 @@ def game():
         player1.phrase = ""
         player2.phrase = ""
 
+    if player1.vie <= 0:
+        print("Vainqueur de la rencontre : Joueur 2 !")
+    elif player2.vie <= 0:
+        print("Vainqueur de la rencontre : Joueur 1 !")
+    else:
+        print("Egalité... Dommage !")
 
 game()
