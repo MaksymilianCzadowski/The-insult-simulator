@@ -1,6 +1,3 @@
-from Board import board
-import time
-
 
 class player:
     def __init__(self, personnage):
@@ -18,16 +15,9 @@ class player:
         self.vie = 100
         self.damage = 5
 
-    def openBoard(self):
-        count = 1
-        for word in board.boardList:
-            print('[', count, ']', word)
-            count += 1
+    def chooseWord(self, board):
 
-
-    def chooseWord(self):
-
-        self.openBoard()
+        board.openBoard()
         print()
         choice = int(input("Entre une valeur : "))
 
@@ -35,14 +25,12 @@ class player:
             print('valeur incorrect, veulliez saisir une valeur entre 1 et', len(board.boardList))
             choice = int(input())
 
-
         for i in board.boardList:
-            if i == board.boardList[choice-1]:
+            if i == board.boardList[choice - 1]:
                 self.phrase += i + " "
-                board.boardList.pop(choice-1)
+                board.boardList.pop(choice - 1)
                 return
         return
-
 
     def attackPhase(self):
         player_damage = 0
@@ -61,9 +49,3 @@ class player:
                 player_damage *= 1.5
 
         return player_damage
-
-
-
-
-
-
