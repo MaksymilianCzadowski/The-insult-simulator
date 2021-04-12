@@ -17,3 +17,5 @@ class listword:
 
     conjonction = ["mais", "ou", "et", "donc", "or", "ni", "car", "à", "dans", "par", "pour", "avec", "de", "sans",
                    "sous", "entre", "derrière", "chez", "en", "vers"]
+
+
