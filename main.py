@@ -38,8 +38,11 @@ def game():
 
     while not (player1.vie <= 0 or player2.vie <= 0):
         while len(board.boardList) > 2:
+            print("player1 :", player1.phrase)
             player1.chooseWord(board)
+            print("player2 :", player2.phrase)
             player2.chooseWord(board)
+
 
         print("La phrase de player1 est : \"", player1.phrase, "\"")
         print("La phrase de player2 est : \"", player2.phrase, "\"")
@@ -48,6 +51,9 @@ def game():
 
         player1.vie -= player2.attackPhase()
         player2.vie -= player1.attackPhase()
+        player1.bonusAtt = 0
+        player2.bonusAtt = 0
+
         print("player1 :", player1.vie, "PV")
         print("player2 :", player2.vie, "PV")
 

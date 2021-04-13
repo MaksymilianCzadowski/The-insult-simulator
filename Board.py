@@ -1,6 +1,6 @@
 from WordList import listword
 from random import randint
-
+from Player import player
 
 class board:
     def __init__(self):
@@ -28,3 +28,4 @@ class board:
         for word in self.boardList:
             print('[', count, ']', word)
             count += 1
+        print('[', 100, ']', "Bonus")
